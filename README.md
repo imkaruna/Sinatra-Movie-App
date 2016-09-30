@@ -8,4 +8,4 @@ You can now store your passwords in one single place!
   * Fork this repo
   * run `bundle install` to get all gems installed
   * run `ruby app.rb -o 0.0.0.0` to start your simple server
-  * browse to 0.0.0.0:4567 to view the application
+  * browse to `0.0.0.0:4567` to view the application
