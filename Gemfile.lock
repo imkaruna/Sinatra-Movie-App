@@ -17,6 +17,7 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  rack
   rest-open-uri
   sinatra
 
