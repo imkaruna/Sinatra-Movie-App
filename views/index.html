@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
   <title>Favorite Movies</title>
 </head>
@@ -11,7 +12,7 @@
     <div class="row">
       <div class="well">
         <form class="col-xs-12 col-sm-6 col-md-6" id="search-form">
-          <input class="form-control"type="text" name="name" value=""><br>
+          <input class="form-control" type="text" id="search-text" name="search-text"><br>
           <input class="btn btn-success" id="search-btn" type="submit" name="submit" value="Search">
         </form>
       </div>
@@ -19,19 +20,25 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <div id="search-results" style="display:none;">
-          <h1>Search Results</h1>
-          <ul>
-          <li></li>
-          </ul>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <h4 class="pull-left">Search Results</h4>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="#" id="show-favorites"><i class="fa fa-lg fa-heart pull-right" aria-hidden="true"><span id="counter">  0</span>  favorites</i></a>
+          </div>
+        </div>
+        <div id="search-results"  style="display:none;" >
+
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <div id="favorites" style="display:none;">
-          <h1>Favorites</h1>
-          <ul id="favorites-list">
-            <li></li>
-          </ul>
+        <div id="favorites-list" style="display:none;">
+          <hr>
+          <h4>Favorites</h4>
+          <div id="favorite-element">
+          </div>
         </div>
       </div>
     </div>
