@@ -1,8 +1,6 @@
 # Sinatra Movie App
 Web application built using Sinatra and Ruby
 
-You can now store your passwords in one single place!
-
 ###Using this app
 
   * Fork this repo
